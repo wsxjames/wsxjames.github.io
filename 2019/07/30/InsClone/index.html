@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>InsClone | James&#39; Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Cloning Instagram Note：AWS, Parse and Cocapodtry">
+<meta property="og:type" content="article">
+<meta property="og:title" content="InsClone">
+<meta property="og:url" content="http://yoursite.com/2019/07/30/InsClone/index.html">
+<meta property="og:site_name" content="James&#39; Blog">
+<meta property="og:description" content="Cloning Instagram Note：AWS, Parse and Cocapodtry">
+<meta property="og:locale" content="English">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/006tNc79gy1g5i4wycjq9j31kq0l8wiw.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/006tNc79gy1g5i6qvkznnj32la0t848q.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/006tNc79gy1g5i6wqm7zpj31dg0tqdn8.jpg">
+<meta property="og:updated_time" content="2019-07-30T13:36:46.066Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="InsClone">
+<meta name="twitter:description" content="Cloning Instagram Note：AWS, Parse and Cocapodtry">
+<meta name="twitter:image" content="http://ww3.sinaimg.cn/large/006tNc79gy1g5i4wycjq9j31kq0l8wiw.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="James&#39; Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">James&#39; Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-InsClone" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/30/InsClone/" class="article-date">
+  <time datetime="2019-07-30T12:11:26.000Z" itemprop="datePublished">2019-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      InsClone
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Cloning-Instagram-Note：AWS-Parse-and-Cocapod"><a href="#Cloning-Instagram-Note：AWS-Parse-and-Cocapod" class="headerlink" title="Cloning Instagram Note：AWS, Parse and Cocapod"></a>Cloning Instagram Note：AWS, Parse and Cocapod</h1><p>try</p>
+<a id="more"></a>
+
+<h2 id="1-Introduction-to-the-Ingredients"><a href="#1-Introduction-to-the-Ingredients" class="headerlink" title="1. Introduction to the Ingredients"></a>1. Introduction to the Ingredients</h2><h3 id="1-1-Amazon-Web-Service-AWS"><a href="#1-1-Amazon-Web-Service-AWS" class="headerlink" title="1.1 Amazon Web Service (AWS)"></a>1.1 Amazon Web Service (AWS)</h3><p>What is Amazon Web Service? According to Wikipedia:</p>
+<blockquote>
+<p>Amazon Web Services (AWS) is a subsidiary of Amazon that provides on-demand <strong>cloud computing platforms</strong> to individuals, companies, and governments, on a metered pay-as-you-go basis. In aggregate, these cloud computing web services provide a set of <strong>primitive abstract technical infrastructure</strong> and distributed computing building blocks and tools. </p>
+</blockquote>
+<p>In short, it is a platform of multiple cloud computing forms. We today, however, only use one of them: EC2. You may find EC2 in the upper bar of AWS under the category of Compute. We are using AWS not only because it provides a 12-month free trial, but also it’s stable enough and you can find huge amount of supporting document online.<br><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g5i4wycjq9j31kq0l8wiw.jpg" alt><br>Be patient. We still need to know what EC2 is before we use it. According to Wikipedia: </p>
+<blockquote>
+<p>Amazon Elastic Compute Cloud (EC2) forms a central part of Amazon.com’s cloud-computing platform, Amazon Web Services (AWS), by allowing users to rent virtual computers on which to <strong>run their own computer applications</strong>. EC2 encourages scalable deployment of applications by providing a web service through which a user can boot an Amazon Machine Image (AMI) to configure a <strong>virtual machine</strong>, which Amazon calls an <strong>“instance”</strong>, containing any software desired. </p>
+</blockquote>
+<p>In short, it is a virtual computer to run our own apps. It is “elastic” because it charges according to the number of users of your app. The more people are using it, the more it charges. </p>
+<h3 id="1-2-Parse"><a href="#1-2-Parse" class="headerlink" title="1.2 Parse"></a>1.2 Parse</h3><p>The next thing we need is Parse. What is Parse? According to Wikipedia:</p>
+<blockquote>
+<p>Parse was a <strong>mobile backend</strong> as a service platform originally developed by the provider Parse, Inc.</p>
+</blockquote>
+<p>By “mobile backend”, it means that Parse is a backend management platform on cloud. It provides multiple services, including server setup, database management, API, storage, notification pushing and data analysis etc.<br>To put it in a easy way, EC2 is a computer setup for you, only it’s on the cloud; while Parse is the OS running on it.<br>We are using Parse because it’s open-source while providing basic functions that are all very useful to us. </p>
+<h2 id="2-Step-by-Step"><a href="#2-Step-by-Step" class="headerlink" title="2. Step by Step"></a>2. Step by Step</h2><h3 id="2-1-Create-a-new-account-on-AWS"><a href="#2-1-Create-a-new-account-on-AWS" class="headerlink" title="2.1 Create a new account on AWS"></a>2.1 Create a new account on AWS</h3><p>This step is as simple as creating an account on Google. You just go to aws.amazon.com, click the upper-right corner and follow the steps.<br>There is two things you might want to pay attention to:<br>First, the only way of verification way is by phone calling. Thus if you are out of the United States, don’t hesitate to look for assistant. They’re 24/7.<br>Second, it takes several hours to setup EC2 even though other functions may be available immediately after you create your account. Be patient. </p>
+<h3 id="2-2-Setup-Parse-on-AWS"><a href="#2-2-Setup-Parse-on-AWS" class="headerlink" title="2.2 Setup Parse on AWS"></a>2.2 Setup Parse on AWS</h3><p>By clicking on “EC2”, you will enter EC2 Dashboard, as it’s shown below. Now you want to launch a virtual machine on EC2. Recall the Wikipedia quote from above, the virtual machine is referred by Amazon as “Instance”. You may click the “Launch Instance” from Create Instance.<br><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g5i6qvkznnj32la0t848q.jpg" alt><br>After Clicking into it, you want to first select “AWS Marketplace”, and search for “Parse”. Then the first one is what we want.<br><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g5i6wqm7zpj31dg0tqdn8.jpg" alt></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/07/30/InsClone/" data-id="cjyps64tr00004u4avpn3mqkk" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/07/29/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/07/30/InsClone/">InsClone</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/29/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 James Wu<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

@@ -5,22 +5,37 @@
   
 
   
-  <title>InsClone | James&#39; Blog</title>
+  <title>Cloning Instagram Note：AWS, Parse and Cocoapods | James&#39; Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Cloning Instagram Note：AWS, Parse and Cocapodtry">
+  <meta name="description" content="This article introduces steps to build an iOS app and link it to Parse platform on AWS via Cocoapods.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="InsClone">
+<meta property="og:title" content="Cloning Instagram Note：AWS, Parse and Cocoapods">
 <meta property="og:url" content="http://yoursite.com/2019/07/30/InsClone/index.html">
 <meta property="og:site_name" content="James&#39; Blog">
-<meta property="og:description" content="Cloning Instagram Note：AWS, Parse and Cocapodtry">
+<meta property="og:description" content="This article introduces steps to build an iOS app and link it to Parse platform on AWS via Cocoapods.">
 <meta property="og:locale" content="English">
 <meta property="og:image" content="http://ww3.sinaimg.cn/large/006tNc79gy1g5i4wycjq9j31kq0l8wiw.jpg">
 <meta property="og:image" content="http://ww3.sinaimg.cn/large/006tNc79gy1g5i6qvkznnj32la0t848q.jpg">
 <meta property="og:image" content="http://ww4.sinaimg.cn/large/006tNc79gy1g5i6wqm7zpj31dg0tqdn8.jpg">
-<meta property="og:updated_time" content="2019-07-30T13:36:46.066Z">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006tNc79gy1g5i72urysmj31mb0u0du8.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006tNc79gy1g5j1sfqtp2j31jq0u0k7x.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/006tNc79gy1g5j2k64b2ij31hx0u0gtz.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006tNc79gy1g5j2li5f3pj31bw0tytdq.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/006tNc79gy1g5j31q780bj312j0u00wg.jpg">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/006tNc79gy1g5j347214tj31460u0n5w.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/006tNc79gy1g5j3qf1085j32720qwkej.jpg">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/006tNc79gy1g5j3n12xocj31hr0u04cq.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/006tNc79gy1g5j41oiij5j31jh0u0dxa.jpg">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/006tNc79gy1g5j46zvgqpj30qm09sq7i.jpg">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/006tNc79gy1g5j4brrqkdj30wq0gc78z.jpg">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/006tNc79gy1g5j4i1lqrlj30y20u0gsh.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/006tNc79gy1g5j4jq6xd8j313z0u0do6.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/006tNc79gy1g5j4lytfwqj319o0u0haf.jpg">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/006tNc79gy1g5j4qgqqkfj31kw0kwwxy.jpg">
+<meta property="og:updated_time" content="2019-07-31T09:10:13.049Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="InsClone">
-<meta name="twitter:description" content="Cloning Instagram Note：AWS, Parse and Cocapodtry">
+<meta name="twitter:title" content="Cloning Instagram Note：AWS, Parse and Cocoapods">
+<meta name="twitter:description" content="This article introduces steps to build an iOS app and link it to Parse platform on AWS via Cocoapods.">
 <meta name="twitter:image" content="http://ww3.sinaimg.cn/large/006tNc79gy1g5i4wycjq9j31kq0l8wiw.jpg">
   
     <link rel="alternate" href="/atom.xml" title="James&#39; Blog" type="application/atom+xml">
@@ -82,7 +97,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      InsClone
+      Cloning Instagram Note：AWS, Parse and Cocoapods
     </h1>
   
 
@@ -90,7 +105,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Cloning-Instagram-Note：AWS-Parse-and-Cocapod"><a href="#Cloning-Instagram-Note：AWS-Parse-and-Cocapod" class="headerlink" title="Cloning Instagram Note：AWS, Parse and Cocapod"></a>Cloning Instagram Note：AWS, Parse and Cocapod</h1><p>try</p>
+        <!-- # Cloning Instagram Note：AWS, Parse and Cocapod -->
+<p>This article introduces steps to build an iOS app and link it to Parse platform on AWS via Cocoapods.</p>
 <a id="more"></a>
 
 <h2 id="1-Introduction-to-the-Ingredients"><a href="#1-Introduction-to-the-Ingredients" class="headerlink" title="1. Introduction to the Ingredients"></a>1. Introduction to the Ingredients</h2><h3 id="1-1-Amazon-Web-Service-AWS"><a href="#1-1-Amazon-Web-Service-AWS" class="headerlink" title="1.1 Amazon Web Service (AWS)"></a>1.1 Amazon Web Service (AWS)</h3><p>What is Amazon Web Service? According to Wikipedia:</p>
@@ -107,13 +123,35 @@
 <p>Parse was a <strong>mobile backend</strong> as a service platform originally developed by the provider Parse, Inc.</p>
 </blockquote>
 <p>By “mobile backend”, it means that Parse is a backend management platform on cloud. It provides multiple services, including server setup, database management, API, storage, notification pushing and data analysis etc.<br>To put it in a easy way, EC2 is a computer setup for you, only it’s on the cloud; while Parse is the OS running on it.<br>We are using Parse because it’s open-source while providing basic functions that are all very useful to us. </p>
+<h3 id="1-2-Cocoapods"><a href="#1-2-Cocoapods" class="headerlink" title="1.2 Cocoapods"></a>1.2 Cocoapods</h3><p>What is Cocoapods? According to its official website (cocoapods.org):</p>
+<blockquote>
+<p>CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects. It has over 64 thousand libraries and is used in over 3 million apps. CocoaPods can help you scale your projects elegantly.</p>
+</blockquote>
+<p>Basically, it is a manager for libraries that saves you time and trouble to add them manually. </p>
 <h2 id="2-Step-by-Step"><a href="#2-Step-by-Step" class="headerlink" title="2. Step by Step"></a>2. Step by Step</h2><h3 id="2-1-Create-a-new-account-on-AWS"><a href="#2-1-Create-a-new-account-on-AWS" class="headerlink" title="2.1 Create a new account on AWS"></a>2.1 Create a new account on AWS</h3><p>This step is as simple as creating an account on Google. You just go to aws.amazon.com, click the upper-right corner and follow the steps.<br>There is two things you might want to pay attention to:<br>First, the only way of verification way is by phone calling. Thus if you are out of the United States, don’t hesitate to look for assistant. They’re 24/7.<br>Second, it takes several hours to setup EC2 even though other functions may be available immediately after you create your account. Be patient. </p>
-<h3 id="2-2-Setup-Parse-on-AWS"><a href="#2-2-Setup-Parse-on-AWS" class="headerlink" title="2.2 Setup Parse on AWS"></a>2.2 Setup Parse on AWS</h3><p>By clicking on “EC2”, you will enter EC2 Dashboard, as it’s shown below. Now you want to launch a virtual machine on EC2. Recall the Wikipedia quote from above, the virtual machine is referred by Amazon as “Instance”. You may click the “Launch Instance” from Create Instance.<br><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g5i6qvkznnj32la0t848q.jpg" alt><br>After Clicking into it, you want to first select “AWS Marketplace”, and search for “Parse”. Then the first one is what we want.<br><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g5i6wqm7zpj31dg0tqdn8.jpg" alt></p>
+<h3 id="2-2-Setup-AWS"><a href="#2-2-Setup-AWS" class="headerlink" title="2.2 Setup AWS"></a>2.2 Setup AWS</h3><p>By clicking on “EC2”, you will enter EC2 Dashboard, as it’s shown below. Now you want to launch a virtual machine on EC2. Recall the Wikipedia quote from above, the virtual machine is referred by Amazon as “Instance”. You may click the “Launch Instance” from Create Instance.<br><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g5i6qvkznnj32la0t848q.jpg" alt><br>After Clicking into it, you want to first select “AWS Marketplace”, and search for “Parse”. Then the first one is what we want. Click “Select”.<br><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g5i6wqm7zpj31dg0tqdn8.jpg" alt><br>Click “Continue” when you see a window pops up. Then you will see the interface as shown in the image below.<br><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g5i72urysmj31mb0u0du8.jpg" alt><br>After launching it,you need to have a key pair. Since it’s our first time launching it, we will create a new key pair. You can pick whatever name you like, and download the key pair.<br><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g5j1sfqtp2j31jq0u0k7x.jpg" alt><br>That’s all for the AWS. </p>
+<h3 id="2-3-Setup-Parse"><a href="#2-3-Setup-Parse" class="headerlink" title="2.3 Setup Parse"></a>2.3 Setup Parse</h3><p>We use Cocoapods to do so. As we mentioned above, it allows you to use many libraries, and Parse is one of them. To install it, use terminal, and type:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gem install cocoapods</span><br></pre></td></tr></table></figure>
+<p>Next step, create your Xcode project, and access your project folder with terminal. Enter the following to your terminal to initialize it </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pod init</span><br></pre></td></tr></table></figure>
+<p>Then we want to create a new podfile:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open -a Xcode Podfile</span><br></pre></td></tr></table></figure>
+<p>Then a text file window will pop up. We want to edit it so that Cocoapods knows we want to setup Parse. We search Parse in cocoapods.org.<br><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g5j2k64b2ij31hx0u0gtz.jpg" alt><br>Follow its steps:<br><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g5j2li5f3pj31bw0tytdq.jpg" alt><br>In the Podfile, all the lines starst with a # is commented. Delete all uncommented line and replace them with “<strong>pod ‘Parse’</strong>“.Remember not to delete the final “end”.<br>Finally, enter the following to install Parse with Cocoapods </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pod install</span><br></pre></td></tr></table></figure>
+<p>It takes some time to finish up, especially for those who are not in the United States. That ends this step.</p>
+<h3 id="2-4-Link-Project-to-AWS"><a href="#2-4-Link-Project-to-AWS" class="headerlink" title="2.4 Link Project to AWS"></a>2.4 Link Project to AWS</h3><p>First, we need to use the “xcodeworkspace” that integrates in Cocoapods instead of “xcodeproj”. You will need to reopen Xcode by clicking onto the “.xcodeworkspace” file in your project folder.<br>The official website of Parse (parseplatform.org) provides codes to finish such task. In this site, if you scroll down, you will find “Parse Server Guide” under Documents<br><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g5j31q780bj312j0u00wg.jpg" alt><br>Since we are using Parse SDK (Software Development Kit) with Parse server, and we are developing with Swift, we copy the code below.<br><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g5j347214tj31460u0n5w.jpg" alt></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">let configuration = ParseClientConfiguration &#123;</span><br><span class="line">    $0.applicationId = &quot;YOUR_APP_ID&quot;</span><br><span class="line">    $0.clientKey = &quot;&quot;</span><br><span class="line">    $0.server = &quot;http://localhost:1337/parse&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Parse.initialize(with: configuration)<br>We want to put the code into AppDelegate.swift. We want our app link to AWS as soon as it launches, so we put it under didFinishLaunching. Remember to import Parse at the beginning of the code.<br><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g5j3qf1085j32720qwkej.jpg" alt><br>Now we need to configure the lines of code. We need to know 3 things: appId, clientKey and server, and then we can initialize Parse with our configuration.<br>First, we know our server: it’s Parse running on EC2 of AWS. In your Instance page, you will find the Public DNS on the right bottom corner, which is the address of your EC2 server. To make it your parse server, you just need to add “/parse” at the end of it.<br><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g5j3n12xocj31hr0u04cq.jpg" alt><br>Next, click “connect” at the top, and a window will pop up. First, we need to use “chmod” to change the visibility of the key pair. You need to go to whichever folder that stores the key pair and run the command. Afterwards, use the example ssh line to access your server.<br><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g5j41oiij5j31jh0u0dxa.jpg" alt><br>Then, go to the folder of:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd apps/parse/htdocs</span><br></pre></td></tr></table></figure>
+<p>and use vim or other editor to open server.js.<br><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g5j46zvgqpj30qm09sq7i.jpg" alt><br>Then you will find your appId and clientKey under Parse Dashboard. Note that clientKey is the masterKey.<br><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g5j4brrqkdj30wq0gc78z.jpg" alt></p>
+<h3 id="2-4-Testing"><a href="#2-4-Testing" class="headerlink" title="2.4 Testing"></a>2.4 Testing</h3><p>Parse official website actually provides us with a testing code in iOS guide under SDKs and Libraries as shown below.<br><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g5j4i1lqrlj30y20u0gsh.jpg" alt><br>The code is in the subtitle of “Saving Objects”. Since we are developing with Swift, don’t forget to switch to Swift.<br><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g5j4jq6xd8j313z0u0do6.jpg" alt><br>We will put the code under viewDidLoad of ViewController, so this code will run as soon as the app is loaded. Again, don’t forget to import Parse.<br><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g5j4lytfwqj319o0u0haf.jpg" alt><br>Since Apple has recently updated its security standard, we actually need to go to Info.plist and add on a “App Transport Security Settings” and “Allow Arbitrary Loads” under it. Set the later one to “Yes”.<br><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g5j4qgqqkfj31kw0kwwxy.jpg" alt><br>If you run the app, and see “Success!” in your console, congratulations! You have succeeded in linking your app with AWS! Now your app have a cloud storage on AWS. </p>
+<!-- ### 2.5 See Data Uploaded to Parse -->
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/30/InsClone/" data-id="cjyps64tr00004u4avpn3mqkk" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/07/30/InsClone/" data-id="cjyr156yh0001iw4a2q7jtmzx" class="article-share-link">Share</a>
       
       
     </footer>
@@ -162,7 +200,7 @@
       <ul>
         
           <li>
-            <a href="/2019/07/30/InsClone/">InsClone</a>
+            <a href="/2019/07/30/InsClone/">Cloning Instagram Note：AWS, Parse and Cocoapods</a>
           </li>
         
           <li>
